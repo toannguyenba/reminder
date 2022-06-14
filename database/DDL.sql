@@ -6,10 +6,12 @@ create table `task` (
     `title` varchar(200) not null,
     `description` varchar(500),
     `date_reminder` datetime not null,
-    `status` int
+    `status` int,
+		`delete_flag` tinyint(1)
 );
 
 create table `setting` (
+	`setting_id` int primary key,
 	`noti_time` int not null,
     `record_per_page` int default 10,
     `date_format` varchar(20),
