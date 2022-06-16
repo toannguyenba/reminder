@@ -23,7 +23,7 @@ public class Task implements Serializable {
 	private Date dateReminder;
 
 	@Column(name="delete_flag")
-	private byte deleteFlag;
+	private int deleteFlag;
 
 	private String description;
 
@@ -50,11 +50,11 @@ public class Task implements Serializable {
 		this.dateReminder = dateReminder;
 	}
 
-	public byte getDeleteFlag() {
+	public int getDeleteFlag() {
 		return this.deleteFlag;
 	}
 
-	public void setDeleteFlag(byte deleteFlag) {
+	public void setDeleteFlag(int deleteFlag) {
 		this.deleteFlag = deleteFlag;
 	}
 

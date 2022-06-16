@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.learning.reminder.dto.SettingDTO;
 import com.learning.reminder.entities.Setting;
 
 @Service
@@ -11,5 +12,5 @@ public interface SettingService {
 
 	public List<Setting> getAllSetting();
 	
-	public Setting getFirstSetting();
+	public SettingDTO getFirstSetting();
 }

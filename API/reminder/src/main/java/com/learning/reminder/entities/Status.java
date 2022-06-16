@@ -13,20 +13,23 @@ import javax.persistence.*;
 public class Status implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Id
-	private int id;
+	@EmbeddedId
+	private StatusPK id;
 
 	@Column(name="color_code")
 	private String colorCode;
 
+	@Column(name="status_name")
+	private String statusName;
+
 	public Status() {
 	}
 
-	public int getId() {
+	public StatusPK getId() {
 		return this.id;
 	}
 
-	public void setId(int id) {
+	public void setId(StatusPK id) {
 		this.id = id;
 	}
 
@@ -36,6 +39,14 @@ public class Status implements Serializable {
 
 	public void setColorCode(String colorCode) {
 		this.colorCode = colorCode;
+	}
+
+	public String getStatusName() {
+		return this.statusName;
+	}
+
+	public void setStatusName(String statusName) {
+		this.statusName = statusName;
 	}
 
 }

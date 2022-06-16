@@ -3,6 +3,7 @@
 	<persistence-unit name="reminder">
 		<class>com.learning.reminder.entities.Setting</class>
 		<class>com.learning.reminder.entities.Status</class>
+		<class>com.learning.reminder.entities.StatusPK</class>
 		<class>com.learning.reminder.entities.Task</class>
 	</persistence-unit>
 </persistence>

@@ -17,14 +17,8 @@ public class SettingController {
 
 	@GetMapping("/settings")
 	public List<Setting> getAllSetting() {
+		
 		List<Setting> settings = settingService.getAllSetting();
 		return settings;
 	}
-	
-	@GetMapping("/setting")
-	public Setting getFirstSetting() {
-		Setting setting = settingService.getFirstSetting();
-		return setting;
-	}
-	
 }
